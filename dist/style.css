@@ -1,0 +1,81 @@
+
+
+
+.card{
+    float:left;
+    height: 400px;
+    width: calc(33% - 4px);
+    text-align: center;
+    overflow:hidden;
+    background-color: orange;
+    margin: 2px;
+    box-sizing: border-box;
+}
+img{
+    background-color: gray;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#searchInput{
+    width: 80%;
+}
+#rosterBtn{
+    width: 15%;
+}
+.title{
+    font-size: 15px;
+    margin: 5px;
+}
+
+.search-container{
+    display: flex;
+    gap:10px;
+    /* flex-basis:  auto; */
+    /* flex-basis: 100%; */
+    /* justify-content:space-between; */
+
+}
+.form__input {
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 2px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+    transition: all 0.3s; 
+    width:60%;
+  }
+
+  .btn {
+    background-color: rgb(52, 152, 219);
+    box-shadow: rgb(44, 62, 80) 1px 1px 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    font-size: 2.5vw;
+    grid-area: b / b / b / b;
+    padding: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(41, 128, 185);
+    border-image: initial;
+    width:30%;
+
+}

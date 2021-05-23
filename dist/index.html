@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="search-container">
+        <input type="text" id="book-input" class="form__input" placeholder="enter your team name  ">
+        <div id="getTeam" class="btn">search</div>
+        <div id="dreamTeam" class="btn">DreamTeam</div>
+
+    </div>
+    <div id="container"></div>
+
+
+
+    <script id="player-template" type="text/x-handlebars-template">
+        {{#each players}}
+        <div class="card">
+            <p class="title">{{firstName}} {{lastName}}</p>
+            <p class="title">{{jersey}}</p>
+            <img src="https://nba-players.herokuapp.com/players/{{lastName}}/{{firstName}}" height="300px" onError="this.onerror=null;this.src='/default.jpg';" >
+            <p class="title">{{pos}}</p>
+            <button class="add-to-dream" data-id={{personId}}>addToDreamTeam</button>
+            
+        </div>
+        {{/each}}
+    </script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.js"></script> -->
+    <!-- <script src="/jquery/dist/jquery.js"></script> -->
+
+    <script src="/handlebars/dist/handlebars.js"></script>
+
+    <script src="/jquery/dist/jquery.js"></script>
+    <script src="render.js"></script>
+    <script src="logic.js"></script>
+    <script src="main.js"></script>
+
+
+</body>
+
+</html>
